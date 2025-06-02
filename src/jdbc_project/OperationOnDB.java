@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package jdbc_project;
 
 import java.sql.Statement;
@@ -12,8 +9,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
- * @author ACTIVE
+ * This file contains methods that you can use on the DB
+ * Operations are (Create the table, Drop the table, Insert data into the table, Update the table, Delete from the table,
+ * Show all data in the table, Get the names of the table)
+ * @author Ahmed Mansour
  */
 public class OperationOnDB {
     static Scanner  input = new Scanner(System.in);

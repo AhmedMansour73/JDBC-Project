@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package jdbc_project;
 
 import java.sql.Connection;
@@ -12,10 +9,13 @@ import java.sql.Statement;
 import java.sql.PreparedStatement;
 
 /**
+ * in this class, connect with SQL DB 
+ * named 'test', and the username of this DB is 'user', and the password is '123'
  *
- * @author ACTIVE
+ * @author Ahmed Mansour
  */
 public class ConnectWithDB {
+    // information about DB
     private static String URL = "jdbc:sqlserver://localhost:1433;databaseName=test;encrypt=true;trustServerCertificate=true";
     private static String USERNAME="user";
     private static String PASSWORD = "123";
@@ -49,13 +49,14 @@ public class ConnectWithDB {
         this.PASSWORD = PASSWORD;
     }
     
-    
+    // This method links JSE to DB
     public static Connection connectDB() throws SQLException
     {
         return DriverManager.getConnection(URL, USERNAME, PASSWORD);
          
     }
-    
+
+    // This method close links JSE to DB after finash working
     public static void colseconnect() throws SQLException
     {
         if(rs != null)

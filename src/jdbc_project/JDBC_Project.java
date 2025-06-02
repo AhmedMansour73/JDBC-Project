@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import java.util.Scanner;
 
 /**
- *
+ * this main file Content in the code to invoke methods in the program
  * @author Ahmed Mansour
  */
 
@@ -28,7 +28,6 @@ public class JDBC_Project {
          
         Connection con =null;
         Statement stat =null;
-//        PreparedStatement prepstat =null;
         ResultSet rs =null;
         
         int numberOfOperation=1;
